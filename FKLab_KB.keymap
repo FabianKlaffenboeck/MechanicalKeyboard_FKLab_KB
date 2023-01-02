@@ -39,12 +39,12 @@
 		};
 		sys_layer {
 			bindings = <
-		&none 	   						   &none &none 		  &none 		  &none 	   &none 		&none 		  &none &none &none &none &none &none &none &none 	&none &none &none &none
-		&none 	   						   &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 	  &none &none &none &none &none &none &none &none 	&none &none &none &none
-		&none 	   						   &none &none 		  &none 		  &none 	   &none 		&none 		  &none &none &none &none &none &none &none &none 	&none &none &none &none
-		&none 	   						   &none &none 		  &none 		  &none 	   &none 		&none 		  &none &none &none &none &none &none &none		  	&none &none &none
-		&rgb_ug RGB_COLOR_HSB(128,100,100) &none &none 		  &none 		  &none 	   &none 		&none 		  &none &none &none &none &none &none &none       	&none &none
-		&bt BT_CLR 						   &none &none 		  &none 		  &none 	   &none 		&none 		  &none &none &none &none &none &none
+		&none 		&none &none 		&none 		  &none 	   &none 		&none 			&none &none &none &none &none &none &none &rgb_ug RGB_TOG 		&none								&none 								&none 	&rgb_ug RGB_BRI
+		&none 		&none &bt BT_SEL 0	&bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4		&none &none &none &none &none &none &none &none 				&rgb_ug RGB_COLOR_HSB(128,100,100) 	&rgb_ug RGB_COLOR_HSB(274,100,50) 	&none 	&rgb_ug RGB_BRD
+		&none 		&none &none 		&none 		  &none 	   &none 		&none 			&none &none &none &none &none &none &none &none 				&rgb_ug RGB_COLOR_HSB(18,100,50) 	&rgb_ug RGB_COLOR_HSB(232,100,50) 	&none 	&none
+		&none 		&none &none 		&none 		  &none 	   &none 		&none 			&none &none &none &none &none &none &none		  				&rgb_ug RGB_COLOR_HSB(316,100,50)	&rgb_ug RGB_COLOR_HSB(167,100,50) 	&none
+		&none 		&none &none 		&none 		  &none 	   &none 		&none 			&none &none &none &none &none &none &none       				&none &none
+		&bt BT_CLR 	&none &none 		&none 		  &none 	   &none 		&none 			&none &none &none &none &none &none
 			>;
 		};
 	};
