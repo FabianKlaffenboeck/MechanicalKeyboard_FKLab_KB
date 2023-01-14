@@ -84,13 +84,21 @@
     sensors = <&encoder>;
 	};
 
-	encoder: encoder_left {
+	power: ext-power {
+		compatible = "zmk,ext-power-generic";
+		label = "EXT_POWER";
+		init-delay-ms = <20>;
+		control-gpios = <&gpio0 4 GPIO_ACTIVE_HIGH>;
+	};
+
+	encoder_left {
         compatible = "alps,ec11";
         label = "ENCODER";
         a-gpios = <&gpio1 5  (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         resolution = <1>;
     };
+
 	 vbatt: vbatt {
 		compatible = "zmk,battery-voltage-divider";
 		label = "BATTERY";
@@ -130,7 +138,7 @@
     label = "WS2812";
 
     /* SPI */
-    reg = <30>; /* ignored, but necessary for SPI bindings */
+    reg = <0>; /* ignored, but necessary for SPI bindings */
     spi-max-frequency = <4000000>;
 
     /* WS2812 */

@@ -23,7 +23,7 @@ CONFIG_USB_DEVICE_PID=0x615E
 
 CONFIG_BT_CTLR_TX_PWR_PLUS_8=y #more POWER
 CONFIG_USB_DEVICE_MANUFACTURER="FKLab" # The manufacturer name advertised to USB	
-CONFIG_ZMK_USB_LOGGING=n #Turn on logging, and set ZMK logging to debug output
+CONFIG_ZMK_USB_LOGGING=y #Turn on logging, and set ZMK logging to debug output
 
 #Enable the rotary encoder
 CONFIG_EC11=y
@@ -33,4 +33,7 @@ CONFIG_ZMK_RGB_UNDERGLOW=y #enale underglow
 CONFIG_WS2812_STRIP=y #Use the STRIP config specific to the LEDs you're using
 CONFIG_ZMK_RGB_UNDERGLOW_EXT_POWER=y
 CONFIG_ZMK_RGB_UNDERGLOW_AUTO_OFF_IDLE=y
-CONFIG_ZMK_RGB_UNDERGLOW_AUTO_OFF_USB=y
+CONFIG_ZMK_RGB_UNDERGLOW_AUTO_OFF_USB=n
+
+
+CONFIG_ZMK_EXT_POWER=y
